@@ -10,7 +10,7 @@ Requires Docker, Intel CPU w/ QuickSync, printf, and intel-gpu-tools package. De
 
 This should be run as root with no other applications/containers running that would utilize quicksync. This includes Desktop Environments.
 
-### Ubuntu
+### Ubuntu / Debian
 ```
 apt install docker jq bc intel-gpu-tools
 ```
