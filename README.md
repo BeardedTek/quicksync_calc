@@ -10,6 +10,15 @@ Requires Docker, Intel CPU w/ QuickSync, printf, and intel-gpu-tools package. De
 
 This should be run as root with no other applications/containers running that would utilize quicksync. This includes Desktop Environments.
 
+## Ubuntu
+```
+apt install docker jq bc intel-gpu-tools
+```
+
+## OpenSuse
+```
+zypper in docker jq bc intel-gpu-tools
+```
 
 HOW TO USE
 ------------
@@ -19,9 +28,6 @@ Full instructions available at [blog.ktz.me](https://blog.ktz.me/i-need-your-hel
 ```
 # connect to the system you want the benchmark on (likely via ssh)
 ssh user@hostname
-
-# install a couple of dependencies (script tested on proxmox 8 + ubuntu 22.04)
-apt install docker jq bc intel-gpu-tools
 
 # clone the git repo with the script
 git clone https://github.com/ironicbadger/quicksync_calc.git
