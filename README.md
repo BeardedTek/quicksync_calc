@@ -15,7 +15,7 @@ This should be run as root with no other applications/containers running that wo
 apt install docker jq bc intel-gpu-tools
 ```
 
-### OpenSuse
+### OpenSUSE
 ```
 zypper in docker jq bc intel-gpu-tools
 ```
@@ -45,8 +45,28 @@ cd quicksync_calc
 https://gist.github.com/ironicbadger/5da9b321acbe6b6b53070437023b844d
 ```
 
+OPTIONAL
+------------
 
-Check out the results.
+You can use the provided `tmux.sh` script to view the status of the test. There are, however, additional requirements
+
+### Ubuntu / Debian
+```
+apt install tmux htop
+```
+### OpenSUSE
+```
+zypper in tmux htop
+```
+
+Finally to run, enter
+```
+./quicksync_benchmark.sh
+```
+and in a separate ssh session or terminal
+```
+./tmux.sh
+```
 
 SAMPLE OUTPUTS
 ------------
